@@ -1,0 +1,14 @@
+{
+  "name": "PoliceDog.Game",
+  "rootNamespace": "PoliceDog",
+  "references": ["PoliceDog.Domain"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
