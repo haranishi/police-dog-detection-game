@@ -13,13 +13,13 @@ Unity Hubへサインインし、他のUnity Editorが終了していること�
 ```bash
 UNITY='/Applications/Unity/Hub/Editor/6000.3.20f1/Unity.app/Contents/MacOS/Unity'
 
-"$UNITY" -batchmode -nographics -projectPath /Users/hara/Projects/police-dog-detection-game -executeMethod PoliceDog.Editor.PrototypeBuild.CreateVerticalSliceScene -quit -logFile /private/tmp/police-dog-compile.log
+"$UNITY" -batchmode -nographics -projectPath /path/to/police-dog-detection-game -executeMethod PoliceDog.Editor.PrototypeBuild.CreateVerticalSliceScene -quit -logFile /private/tmp/police-dog-compile.log
 
-"$UNITY" -batchmode -nographics -projectPath /Users/hara/Projects/police-dog-detection-game -runTests -testPlatform EditMode -testResults /Users/hara/Projects/police-dog-detection-game/TestResults/editmode.xml -quit -logFile /private/tmp/police-dog-tests.log
+"$UNITY" -batchmode -nographics -projectPath /path/to/police-dog-detection-game -runTests -testPlatform EditMode -testResults /path/to/police-dog-detection-game/TestResults/editmode.xml -quit -logFile /private/tmp/police-dog-tests.log
 
-"$UNITY" -batchmode -nographics -projectPath /Users/hara/Projects/police-dog-detection-game -executeMethod PoliceDog.Editor.PrototypeBuild.BuildMac -quit -logFile /private/tmp/police-dog-build.log
+"$UNITY" -batchmode -nographics -projectPath /path/to/police-dog-detection-game -executeMethod PoliceDog.Editor.PrototypeBuild.BuildMac -quit -logFile /private/tmp/police-dog-build.log
 
-open /Users/hara/Projects/police-dog-detection-game/Builds/PoliceDogDetection.app
+open /path/to/police-dog-detection-game/Builds/PoliceDogDetection.app
 ```
 
 ## 操作予定
@@ -44,3 +44,9 @@ open /Users/hara/Projects/police-dog-detection-game/Builds/PoliceDogDetection.ap
 - Unity batchmodeを複数同時に起動しない。
 - プレイヤーテスト前に商用犬・空港・群衆アセットを購入しない。
 - 仮モデルの足滑りや犬らしさを、製品アセットの品質評価へ転用しない。
+
+## ライセンス
+
+自作のコード・資料は [MIT License](LICENSE) で公開しています。
+外部ライブラリ・素材・フォントは各権利者のライセンスに従い、このMITライセンスでは再許諾しません。
+ソース公開は、サービスの一般提供・ストア配布・本番運用の安全性を保証するものではありません。
