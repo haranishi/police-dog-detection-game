@@ -1,5 +1,7 @@
 # Police Dog Detection Vertical Slice
 
+現状の構成・データ境界・検証条件は[現状仕様](docs/current-implementation.md)を参照してください。
+
 警察犬として匂いを読み分け、対象前で座って知らせ、ハンドラーから報酬を受け取るUnity灰箱試作です。商用犬アセット購入前の判断用であり、製品版ではありません。
 
 ## 現在地
